@@ -1730,6 +1730,7 @@ img {
     position: relative;
     width: 100%;
     height: 540px;
+    opacity: 0.5;
 }
 
 .slider-img img {
@@ -2036,6 +2037,7 @@ img {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     width: 100%;
+    height: 120px;
 }
 
 .service-content {
@@ -2325,6 +2327,10 @@ img {
 
 .testimonial-content {
     margin-bottom: 30px;
+}
+
+.testimonial-content img {
+    height: 400px;
 }
 
 .testimonial-text {
