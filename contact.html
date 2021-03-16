@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title> PeopleFocused | Job List Page </title>
+    <title>PeopleFocused | Contact Us </title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Style CSS -->
@@ -43,7 +43,7 @@
                     <div class="navigation">
                         <div id="navigation">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li class="active"><a href="index.html">Home</a></li>
 
                                 <li class=""><a href="blog-default.html">Blog</a>
                                 </li>
@@ -53,11 +53,11 @@
                                         <li><a href="service-coaching.html">Coaching</a></li>
                                         <li><a href="service-single.html">Recruitment & Outsourcing</a></li>
                                         <li><a href="service-single.html">Technology</a></li>
-                                        <li><a href="service-single.html">Consultation</a></li>
+                                        <li><a href="service-single.html">Consulting</a></li>
                                     </ul>
                                 </li>
-                                <li class="active"><a href=" #">Jobs</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="jobs-default.html">Jobs</a></li>
+                                <li><a href="#">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -71,165 +71,75 @@
         </div>
     </div>
     <!-- /. header-section-->
-    <!-- page-header -->
-    <div class="page-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="page-caption">
-                        <h1 class="page-title">Find the job that’s just right for you</h1>
+    <!-- map-section-->
+    <div id="contact-map">
+    </div>
+    <!-- /.map-section-->
+    <!-- contact-form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-offset-1 col-lg-10  col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+                <div class="contact-form">
+                    <h1 class="contact-info-title mb40 ">How Can We Help You?</h1>
+                    <div class="row">
+                        <form action="contactus.php" method="post">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label sr-only" for="name"></label>
+                                    <input id="name" type="text" name="name" placeholder="Name" class="form-control"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label sr-only " for="email"></label>
+                                    <input id="email" name="email" type="email" placeholder="Email" class="form-control"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label sr-only" for="phone"></label>
+                                    <input id="phone" type="text" name="phone" placeholder="Phone" class="form-control"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label sr-only" for="subject"></label>
+                                    <input id="subject" name="subject" type="text" placeholder="Subject"
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 mb20">
+                                <div class="form-group">
+                                    <label class="control-label sr-only" for="message"></label>
+                                    <textarea class="form-control pdt20" id="message" name="message" rows="4"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                <button class="btn btn-primary btn-lg " type="submit">Send us message</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
+                <!-- /.contact-form-->
+                <!-- contact-info-->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-title">
+                            <h2>Our Contact Info</h2>
+                            <p class="lead">Thank you for your interest in HR services. You can easily contact us by
+                                via the details in the footer below .</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.contact-info-->
             </div>
         </div>
     </div>
-    <!-- /.page-header-->
-    <!-- job-list-section -->
-    <div class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  mb30">
-                    <p class="lead">If you're ready for a new challenging job, Browse Jobs on PeopleFocused and take a
-                        look at
-                        our Popular Job Locations and Job Titles</p>
-                </div>
-            </div>
-            <div class="row">
-                <!-- job-list -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="job-post-block">
-                        <div class="job-post-content">
-                            <a href="jobs-single.html">
-                                <h3 class="job-post-title">Senior Front - End Engineer</h3>
-                            </a>
-                            <p>Company Name</p>
-                            <p><span class="job-location-icon"><i class="fa fa-map-marker"></i></span>Ahmedabad, India
-                            </p>
-                        </div>
-                        <div class="job-post-meta">
-                            <span class="badge">javascript</span>
-                            <span class="badge">reactjs</span>
-                            <span class="badge">css</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.job-list -->
-                <!-- job-list -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="job-post-block">
-                        <div class="job-post-content">
-                            <a href="jobs-single.html">
-                                <h3 class="job-post-title">Director of Software Engineering</h3>
-                            </a>
-                            <p>Company Name</p>
-                            <p><span class="job-location-icon"><i class="fa fa-map-marker"></i></span>Mumbai, India</p>
-                        </div>
-                        <div class="job-post-meta">
-                            <span class="badge">C++14</span>
-                            <span class="badge">reactjs</span>
-                            <span class="badge">Computer vision</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.job-list -->
-            </div>
-            <div class="row">
-                <!-- job-list -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="job-post-block">
-                        <div class="job-post-content">
-                            <a href="jobs-single.html">
-                                <h3 class="job-post-title">Senior Java Developer</h3>
-                            </a>
-                            <p>Company Name</p>
-                            <p><span class="job-location-icon"><i class="fa fa-map-marker"></i></span>Banglore, India
-                            </p>
-                        </div>
-                        <div class="job-post-meta">
-                            <span class="badge">javascript</span>
-                            <span class="badge">reactjs</span>
-                            <span class="badge">css</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.job-list -->
-                <!-- job-list -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="job-post-block">
-                        <div class="job-post-content">
-                            <a href="jobs-single.html">
-                                <h3 class="job-post-title">Lead Android Developer</h3>
-                            </a>
-                            <p>Company Name</p>
-                            <p><span class="job-location-icon"><i class="fa fa-map-marker"></i></span>Pune, India</p>
-                        </div>
-                        <div class="job-post-meta">
-                            <span class="badge">C++14</span>
-                            <span class="badge">reactjs</span>
-                            <span class="badge">Computer vision</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.job-list -->
-            </div>
-            <div class="row">
-                <!-- job-list -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="job-post-block">
-                        <div class="job-post-content">
-                            <a href="jobs-single.html">
-                                <h3 class="job-post-title">Senior Front - End Engineer</h3>
-                            </a>
-                            <p>Company Name</p>
-                            <p><span class="job-location-icon"><i class="fa fa-map-marker"></i></span>Ahmedabad, India
-                            </p>
-                        </div>
-                        <div class="job-post-meta">
-                            <span class="badge">javascript</span>
-                            <span class="badge">reactjs</span>
-                            <span class="badge">css</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.job-list -->
-                <!-- job-list -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="job-post-block">
-                        <div class="job-post-content">
-                            <a href="jobs-single.html">
-                                <h3 class="job-post-title">Director of Software Engineering</h3>
-                            </a>
-                            <p>Company Name</p>
-                            <p><span class="job-location-icon"><i class="fa fa-map-marker"></i></span>Mumbai, India</p>
-                        </div>
-                        <div class="job-post-meta">
-                            <span class="badge">C++14</span>
-                            <span class="badge">reactjs</span>
-                            <span class="badge">Computer vision</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.job-list -->
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                    <div class="st-pagination">
-                        <ul class="pagination">
-                            <li><a href="#" aria-label="previous"><span aria-hidden="true"><i
-                                            class="fa fa-angle-left"></i></span></a> </li>
-                            <!-- <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li> -->
-                            <li> <a href="#" aria-label="Next"><span aria-hidden="true"><i
-                                            class="fa fa-angle-right"></i></span></a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- job-list-section -->
     <!-- footer -->
     <div class="footer">
         <div class="container">
@@ -279,7 +189,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <ul class="arrow">
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
                                     <li><a href="#">Client reviews</a></li>
                                     <li><a href="#">The Team</a></li>
                                     <li><a href="index.html?#requestAConsultation">Consultation</a></li>
@@ -326,6 +236,27 @@
             });
         });
     </script>
+    <!-- <script>
+    function initMap() {
+        var uluru = {
+            lat: 23.094197,
+            lng: 72.558148
+        };
+        var map = new google.maps.Map(document.getElementById('contact-map'), {
+            zoom: 14,
+            center: uluru,
+            scrollwheel: false
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            icon: 'images/map_marker.png'
+
+        });
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZib4Lvp0g1L8eskVBFJ0SEbnENB6cJ-g&callback=initMap">
+    </script> -->
 </body>
 
 </html>
