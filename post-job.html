@@ -87,7 +87,7 @@
                 <div class="Service-description">
                     <div class="service-data mb30">
                         <div class="post-job-description" style="max-width: 600px;">
-                            <h3 class="mb30 text-center">Post a Job Opening .</h3>
+                            <h1 class="mb30 text-center">Post a Job Opening</h1>
                             <form action="#">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -131,6 +131,80 @@
                                         <input type="number" name="hires" id="hire" min="1" placeholder="How many hires"
                                             class="form-control" required>
                                     </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <input type="tel" name="phone" id="phone" min="1" placeholder="Phone Number"
+                                            class="form-control" required>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label class="control-label" for="employ-type"
+                                            style="margin-bottom: 0;">What type of employment is it ? </label><br>
+                                        <input type="radio" name="employ-type" id="full-time" required>
+                                        <label for="remote-yes" style="margin-right:5px;">Full Time</label>
+                                        <input type="radio" name="employ-type" id="part-time" required>
+                                        <label for="employ-type">Part Time</label>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label class="control-label" for="contract-type"
+                                            style="margin-bottom: 0;">What Contract type is it ? <span style="opacity: 0.5;">(Select all that apply) </span></label><br>
+                                        <input type="checkbox" name="contract-type" id="Temporary">
+                                        <label for="contract-type" style="margin-right:5px;">Temporary</label><br>
+                                        <input type="checkbox" name="contract-type" id="Contract">
+                                        <label for="contract-type" style="margin-right:5px;">Contract</label><br>
+                                        <input type="checkbox" name="contract-type" id="Internship">
+                                        <label for="contract-type" style="margin-right:5px;">Internship</label><br>
+                                        <input type="checkbox" name="contract-type" id="Commission">
+                                        <label for="contract-type" style="margin-right:5px;">Commission</label><br>
+                                        <input type="checkbox" name="contract-type" id="New-Grad">
+                                        <label for="contract-type" style="margin-right:5px;">New Grad</label><br>
+                                        <input type="checkbox" name="contract-type" id="permanent">
+                                        <label for="contract-type" style="margin-right:5px;">Permanent</label><br>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label class="control-label" for="salary"  style="margin-bottom: 0;">Salary </label><br>
+                                        <input type="number" name="salary" id="min-salary" min="1000" placeholder=" minimum amount"><br>
+                                        <span >To</span><br>
+                                        <input type="number" name="salary" id="max-salary" min="1000" placeholder="maximum amount"><br>
+                                        <select name="salary-basis" id="salary-basis" style="margin-top:15px;">
+                                            <option value="monthly" selected>per month</option>
+                                            <option value="yearly">per year</option>
+                                            <option value="weekly">per week</option>
+                                            <option value="daily">per day</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label class="control-label" for="submit-cv"
+                                            style="margin-bottom: 0;">Do you want applicants to submit a CV ? </label><br>
+                                        <input type="radio" name="submit-cv" id="sumbit-cv-yes">
+                                        <label for="sumbit-cv-yes" style="margin-right:5px;">Yes</label>
+                                        <input type="radio" name="submit-cv" id="submit-cv-no">
+                                        <label for="submit-cv-no" style="margin-right:5px;">No</label>
+                                        <input type="radio" name="submit-cv" id="submit-cv-optional">
+                                        <label for="submit-cv-optional" style="margin-right:5px;">Optional</label>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label class="control-label" for="application-deadline"
+                                            style="margin-bottom: 0;">Is there an application deadline ? </label><br>
+                                        <input type="radio" name="application-deadline" id="application-deadline-yes">
+                                        <label for="application-deadline-yes" style="margin-right:5px;">Yes</label>
+                                        <input type="radio" name="submit-cv" id="application-deadline-no">
+                                        <label for="application-deadline-no" style="margin-right:5px;">No</label><br>
+                                        <label for="application-deadline-date">If yes</label>
+                                        <input type="date" name="application-deadline-date" id="application-deadline-date">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label class="control-label" for="employer-email">
+                                            Updates about this job will be sent to 
+                                        </label><br>
+                                        <input type="email" name="employer-email" id="employer-email" placeholder="Email">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label class="control-label" for="Job-description">
+                                            Job Description
+                                        </label><br>
+                                        <label for="job-description">Describe the responsibilities of this job ,required work experiences ,skills or education.</label>
+                                        <input type="text" name="job-description" id="job-description" placeholder="Make a detailed description of the job.">
+                                    </div>
+
                                 </div>
                             </form>
                         </div>
