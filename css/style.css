@@ -2279,6 +2279,10 @@ img {
 
 .job-company {}
 
+.job-detail {
+    margin-bottom: 25px;
+}
+
 /*--------------------------
  10.5  Client Reviews
  ----------------------------*/
