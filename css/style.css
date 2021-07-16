@@ -225,6 +225,15 @@ label {}
 
 .required {}
 
+#experience::-webkit-outer-spin-button,
+#experience::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#experience {
+    -moz-appearance: textfield;
+}
+
 .form-group {
     margin-bottom: 5px;
 }
@@ -2020,7 +2029,10 @@ img {
 
 /*-------------- tiny footer ------------*/
 
-/*--- easetemplate copyright link --*/
+/* ---------login /Sign Up------------- */
+.login-container {
+    width: 200px;
+}
 
 /*-----------------------------------
 9. Services
